@@ -4,7 +4,7 @@ This code example is a minimal starter multi-core application template for TRAVE
 
 [View this README on GitHub.](https://github.com/Infineon/mtb-example-ce240799-multicore-empty-app)
 
-[Provide feedback on this code example.](https://cypress.co1.qualtrics.com/jfe/form/SV_1NTns53sK2yiljn?Q_EED=eyJVbmlxdWUgRG9jIElkIjoiQ0UyNDA3OTkiLCJTcGVjIE51bWJlciI6IjAwMi00MDc5OSIsIkRvYyBUaXRsZSI6Ik11bHRpLWNvcmUgYXBwbGljYXRpb24gdGVtcGxhdGUiLCJyaWQiOiJrb2ppLm1penVtb3RvQGluZmluZW9uLmNvbSIsIkRvYyB2ZXJzaW9uIjoiMS4yLjAiLCJEb2MgTGFuZ3VhZ2UiOiJFbmdsaXNoIiwiRG9jIERpdmlzaW9uIjoiTUNEIiwiRG9jIEJVIjoiQVVUTyIsIkRvYyBGYW1pbHkiOiJBVVRPIE1DVSJ9)
+[Provide feedback on this code example.](https://yourvoice.infineon.com/jfe/form/SV_1NTns53sK2yiljn?Q_EED=eyJVbmlxdWUgRG9jIElkIjoiQ0UyNDA3OTkiLCJTcGVjIE51bWJlciI6IjAwMi00MDc5OSIsIkRvYyBUaXRsZSI6Ik11bHRpLWNvcmUgYXBwbGljYXRpb24gdGVtcGxhdGUiLCJyaWQiOiJrb2ppLm1penVtb3RvQGluZmluZW9uLmNvbSIsIkRvYyB2ZXJzaW9uIjoiMS4zLjAiLCJEb2MgTGFuZ3VhZ2UiOiJFbmdsaXNoIiwiRG9jIERpdmlzaW9uIjoiTUNEIiwiRG9jIEJVIjoiQVVUTyIsIkRvYyBGYW1pbHkiOiJBVVRPIE1DVSJ9)
 
 ## Requirements
 
@@ -229,6 +229,8 @@ This application has a different folder structure because it contains the firmwa
 
 ```
 
+**Note:** [SystemCoreClockUpdate](https://infineon.github.io/mtb-pdl-cat1/pdl_api_reference_manual/html/group__group__startup__config__system__functions.html#gae0c36a9591fe6e9c45ecb21a794f0f0f) function must be called before using some SysLib functions. if core clock is changed during application execution. This function gets core clock frequency and updates [SystemCoreClock](https://infineon.github.io/mtb-pdl-cat1/pdl_api_reference_manual/html/group__group__startup__config__globals.html#gaa3cd3e43291e81e795d642b79b6088e6), [cy_Hfclk0FreqHz](https://infineon.github.io/mtb-pdl-cat1/pdl_api_reference_manual/html/group__group__startup__config__globals.html#ga4bc88bcbc1ed608c76279ecb565b1f03), and [cy_PeriClkFreqHz](https://infineon.github.io/mtb-pdl-cat1/pdl_api_reference_manual/html/group__group__startup__config__globals.html#ga05a91295faafbe3095f7c51291fe4b1a).
+
 ## Related resources
 
 Resources  | Links
@@ -260,6 +262,7 @@ Document title: *CE240799* – *Multi-core application template*
 | 1.0.0   | New code example      |
 | 1.1.0   | Added support for KIT_T2G-B-H_EVK and KIT_T2G-B-H_LITE, and updated to support ModusToolbox&trade; v3.5. |
 | 1.2.0   | Updated to support ModusToolbox&trade; v3.6. |
+| 1.3.0   | Added Note in Design and implementation |
 <br>
 ---------------------------------------------------------
 
